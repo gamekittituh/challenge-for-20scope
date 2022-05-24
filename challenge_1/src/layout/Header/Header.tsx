@@ -22,11 +22,18 @@ const menuList = [
         path:'/'
     },
 ]
+// function Navbar(){
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.getElementById("navbar").style.top = "0";
+//   } else {
+//     document.getElementById("navbar").style.top = "-50px";
+//   }
+// }
 class Header extends React.Component {
   render() {
     return (
-        <header className="fixed block w-full h-[100] z-[100] overflow-y-hidden bg-green-500 mb-1">
-            <nav className="container mx-auto flex items-center justify-between flex-wrap p-6">
+        <header className="fixed block w-full h-[100] z-[100] overflow-y-hidden bg-transparent mb-1 transition duration-1000 ease:bg-lime-600">
+            <nav className="container mx-auto flex items-center justify-between flex-wrap p-6" id="navbar">
                 <div className="w-full px-6 md:px-8">
                     <div className="flex w-full text-center items-center justify-between">
                         <div className="flex items-center flex-shrink-0 text-white mr-9 text-center">
@@ -44,25 +51,12 @@ class Header extends React.Component {
                             </ul>
                         </div>
                         <div className="flex-auto">
-                            <button className="flex-initial items-center justify-center h-10 w-40 border-solid border border-white rounded-full text-lg text-white hover:bg-green-300">02303 942370</button>
+                            <button className="flex-initial items-center justify-center h-10 w-40 bg-lime-600 rounded-full text-lg text-white hover:bg-lime-800 border-transparent">02303 942370</button>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
-        // <nav className="sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30">
-        // <div className="max-w-5xl mx-auto px-4">
-        //     <div className="flex items-center justify-between h-16">
-        //     <span className="text-2xl text-gray-900 font-semibold">Logo</span>
-        //     <div className="flex space-x-4 text-gray-900">
-        //         <a href="#">Dashboard</a>
-        //         <a href="#">About</a>
-        //         <a href="#">Projects</a>
-        //         <a href="#">Contact</a>
-        //     </div>
-        //     </div>
-        // </div>
-        // </nav>
     )
   }
 }

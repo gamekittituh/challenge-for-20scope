@@ -1,6 +1,11 @@
 import React from 'react';
+import { Contact } from './components/Contact/Index';
+import { Content } from './components/Content/Index';
+import { Partner } from './components/Partner/Index';
 import { ScreenHeader } from './components/ScreenHeader/Index';
-const list = 10
+import { Section } from './components/Section/Index';
+
+
 function App() {
   return (
     <>
@@ -8,10 +13,11 @@ function App() {
         <ScreenHeader title="...weil's mit uns besser geht ." />
       </div>
       <div className="container mx-auto">
-          {[...Array(list)].map((map, index) => (
-            <h1 key={index}>Hello World</h1>
-          ))}
+          <Content/>
+          <Section/>
+          <Partner/>
       </div>
+      <Contact/>
       </>
   );
 }
