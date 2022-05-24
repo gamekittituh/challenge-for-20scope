@@ -1,6 +1,6 @@
 module.exports = {
-  // content: ["./src/**/**/*.{js,tsx}"],
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  // purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     // colors: {
     //   'blue': '#1fb6ff',
