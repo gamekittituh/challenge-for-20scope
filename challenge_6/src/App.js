@@ -34,8 +34,18 @@ function App() {
   }
 ]
 
-const maximum = (items) => {
-  console.log(items)
+
+const maximum = (items,callback) => {
+  let age = items.sort((a,b) => b.age - a.age).map((item,index) => (<p key={index}>{item.name}: {item.age}</p>))
+  let salary = items.sort((a,b) => b.salary - a.salary).map((item,index) => (<p key={index}>{item.name}: {(item.salary).toLocaleString(undefined, { maximumFractionDigits: 2 })}</p>))
+  let children = items.sort((a,b) => b.children - a.children).map((item,index) => (<p key={index}>{item.name}: {item.children}</p>))
+  if(callback){
+    return callback({
+      age: age,
+      salary: salary,
+      children: children
+    })
+  }
 }
   return (
     <div className="App">
@@ -44,9 +54,9 @@ const maximum = (items) => {
         <p>find max by age</p>
         {maximum(items,(person) => person.age)}
         <p>find max by salary</p>
-        {/* {maximum(items,(person) => person.salary)} */}
+        {maximum(items,(person) => person.salary)}
         <p>find max by children</p>
-        {/* {maximum(items,(person) => person.children)} */}
+        {maximum(items,(person) => person.children)}
       </header>
     </div>
   );
