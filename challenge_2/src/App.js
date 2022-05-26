@@ -62,8 +62,8 @@ class List extends React.Component {
   render() {
     return (
       <ul>
-        {this.props.items.map(item => (
-          <li key={item.id}>{item.number}</li>
+        {this.props.items.sort((a,b) => {return b.number - a.number}).map((item, index) => (
+          <li key={index}>{item.number}</li>
         ))}
       </ul>
     );
