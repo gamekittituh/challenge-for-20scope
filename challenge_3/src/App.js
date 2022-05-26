@@ -26,6 +26,8 @@ class App extends React.Component {
       text: ''
     }))
   }
+
+  
   
   render(){
       return (
@@ -36,7 +38,7 @@ class App extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <input
               id="new-todo"
-              type="text"
+              type="number"
               onChange={this.handleChange}
               value={this.state.text}
             />
@@ -50,16 +52,32 @@ class App extends React.Component {
   }
 }
 
-class List extends React.Component {
-  render() {
+const List = (props) => {
+
+  const sortArr = (arr) => {
+    if(arr.length > 0){
+        for(const i in arr){
+          for(const j in arr){
+            if(Number(arr[i].text) < Number(arr[j].text)){
+                const temp = arr[i].text
+                arr[i].text = arr[j].text
+                arr[j].text = temp
+            }
+          }
+        }
+      return arr
+    }else{
+      return []
+    }
+  }
     return (
       <ul>
-        {this.props.items.map((item, index) => (
-              <li key={index}>{item.text}</li>
-        ))}
+        {props.items.length > 0 ? sortArr(props.items).map((item, index) => (
+            <li key={index}>{item.text}</li>
+          )) : null
+        }
       </ul>
     );
-  }
 }
 
 export default App;

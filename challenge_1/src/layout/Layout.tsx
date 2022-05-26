@@ -11,7 +11,7 @@ class Layout extends React.Component <LayoutState> {
     return (
       <>
         <Header />
-            <main>{this.props.children}</main>
+          <main>{this.props.children}</main>
         <Footer />
       </>
     )

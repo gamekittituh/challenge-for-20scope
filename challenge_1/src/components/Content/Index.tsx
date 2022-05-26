@@ -24,10 +24,10 @@ export const Content = () =>{
             {
                 list.map((item, index) => (
                     <a href={item.link} key={index} >
-                        <div className="css-18hcqxa min-h-[440px] w-full grid gap-4 relative hidden lg:block hover:cursor-pointer">
+                        <div className="min-h-[440px] w-full grid gap-4 relative lg:block hover:cursor-pointer">
                             <div className="dim-content absolute rounded-lg w-full h-full hover:bg-lime-600 opacity-40 transition duration-700"></div>
                             <img src={item.image} alt="" className="rounded-lg " />
-                            <div className="absolute bottom-0 z-10 p-4 lg:px-4 lg:py-8">
+                            <div className="absolute md:bottom-0 bottom-[30px] z-10 p-4 lg:px-4 lg:py-8 font-semibold">
                                 <p className="text-[28px] font-semibold text-white lg:mb-2">{item.title}</p>
                                 <p className="text-white lg:h-[110px] xl:h-[110px] xl:text-lg">{item.description} </p>
                                 <div className="mt-6 flex items-center">
