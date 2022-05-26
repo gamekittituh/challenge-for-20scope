@@ -1,7 +1,7 @@
 # challenge-for-20scope
 challenge for 20scope
 
-1.Create a website following this URL ( http://beckschulte.com/ ) with ReactJS.
+1. ⚠ Create a website following this URL ( http://beckschulte.com/ ) with ReactJS.
 
  - a. The website should be responsive (desktop, tablet, mobile).
  
@@ -13,7 +13,7 @@ challenge for 20scope
 
 2. ✅ Create function for finding max item from input array ( Don’t use Math.max )
  
-3. Create function for sorting array ( Don’t use Array.sort )
+3. ✅ Create function for sorting array ( Don’t use Array.sort )
  
 4. ✅ Create function for finding max item from input array which it’s object by age as following
 https://gist.github.com/Elecweb/99d468c6d8db41b4cf72c37ef86b253b
