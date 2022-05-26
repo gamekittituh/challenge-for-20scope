@@ -11,16 +11,16 @@ challenge for 20scope
  
  - d. Use TypeScript.
 
-2. Create function for finding max item from input array ( Don’t use Math.max )
+2. ✅ Create function for finding max item from input array ( Don’t use Math.max )
  
 3. Create function for sorting array ( Don’t use Array.sort )
  
-4. Create function for finding max item from input array which it’s object by age as following
+4. ✅ Create function for finding max item from input array which it’s object by age as following
 https://gist.github.com/Elecweb/99d468c6d8db41b4cf72c37ef86b253b
 
-5. Create function for sorting item from input array which it’s object by age as following
+5. ✅ Create function for sorting item from input array which it’s object by age as following
 https://gist.github.com/Elecweb/99d468c6d8db41b4cf72c37ef86b253b
 
-6. Create function for finding max item from input array which it’s object by specified property which
+6. ✅ Create function for finding max item from input array which it’s object by specified property which
 user can provide by themself (see example input and how the function is used in below gist)
 https://gist.github.com/Elecweb/1477ad2c41b5d6c310feafe4765b3dbf
